@@ -118,26 +118,6 @@
             </p>
             <a href="#" style="margin-left: 0;" class="download_link">Download</a>
           </div>
-          <div class="tab_content__tab ">
-            <h3 class="section_title">Title of tab two</h3>
-            <p class="section_desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eos libero quasi iste iusto quae non
-              aspernatur nesciunt consequatur delectus.
-            </p>
-            <p class="section_desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, amet libero! Repudiandae nihil omnis
-              commodi blanditiis
-            </p>
-            <a href="#" style="margin-left: 0;" class="download_link">Download</a>
-          </div>
-          <div class="tab_content__tab ">
-            <h3 class="section_title">Title of tab three</h3>
-            <p class="section_desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eos libero quasi iste iusto quae non
-              aspernatur nesciunt consequatur delectus.
-            </p>
-
-            <a href="#" style="margin-left: 0;" class="download_link">Download</a>
           </div>
         </div>
         <img src="./images/city.png" class="col-lg-4  col-xs-12 pull-right city_img" alt="">
@@ -291,9 +271,9 @@
 
           <div class="price_condition__price_desc" id="prof_price">
             <span class="dolsign">$</span>
-            <span class="pricenum">19</span><br>
+            <span class="pricenum" id="prof">19</span><br>
             <span class="pricedesc">Monthly Payment</span>
-            <div class="accent_price">OUR MOST POPULAR</div>
+            <div class="accent_pricep">OUR MOST POPULAR</div>
           </div>
 
           <ul class="opp_list">
@@ -451,35 +431,6 @@
   <script src="./js/jquery.js"></script>
   <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/0650b08837.js"></script>
-
-  <script>
-    $(document).ready(function () {
-
-      const obj = {
-        tab1: "0",
-        tab2: "1",
-        tab3: "2"
-      }
-
-      // init mode
-      $(".tab_content__tab").fadeOut(0);
-      $(".tab_content__tab").eq(0).fadeIn(0);
-
-
-      $('.services__tabs__tab').on('click', function () {
-        let id = $(this).attr('id'); // get id of clicked tab
-        let index = obj[id]; // get index clicked tab
-
-        // after tab selection
-        $(".services__tabs__tab").removeClass("tab_active");
-        $(this).addClass("tab_active");
-
-        $(".tab_content__tab").fadeOut(300); // remove all
-        $(".tab_content__tab").eq(index).fadeIn(300); // and show wanted
-      });
-
-    });
-  </script>
 </body>
 
 </html>

@@ -41,7 +41,6 @@ body {
     line-height: 20px;
 }
 
-/* =============== SPLITTERS =============== */
 
 .splitter {
     width: 64px;
@@ -61,8 +60,6 @@ body {
     background: #ff8b38;
 }
 
-
-/* =============== HEADER =============== */
 
 .navbar-default {
     height: 70px;
@@ -116,15 +113,11 @@ body {
 
 }
 
-
-/* =============== MODERN TEMPLATE =============== */
-
 .axure_section {
     background: url('../images/upside.png');
     background-size: cover;
     padding-top: 110px;
     padding-bottom: 136px;
-    background-attachment: fixed;
 }
 
 .axure__title {
@@ -221,8 +214,6 @@ body {
     border-bottom-right-radius: 3px;
 }
 
-/* =============== SOCIAL MEDIA =============== */
-
 .social_container {
     border-bottom: 2px solid #b7b7b7;
 }
@@ -261,11 +252,6 @@ body {
     transform: rotateZ(45deg);
 }
 
-.social_media__icons > i:hover {
-    color: #ff9b51;
-}
-
-/* =============== SERVICES =============== */
 .services_container {
     background: #f5f5f5;
 }
@@ -325,8 +311,6 @@ body {
     margin-bottom: 50px;
 }
 
-
-
 .download_link {
     display: block;
     background: #ff8b38;
@@ -353,10 +337,8 @@ body {
 
 .city_img {
     max-width: 321px;
-    margin-top: 40px;
+    margin-top: -300px;
 }
-
-/* =============== SUB LIST =============== */
 
 .sub_list {
     padding-top: 93px;
@@ -368,9 +350,6 @@ body {
     margin-top: 35px;
 }
 
-
-
-
 .orange_circle {
     width: 36px;
     height: 36px;
@@ -379,14 +358,6 @@ body {
     text-align: center;
     cursor: pointer;
     transition: .2s;
-}
-
-.orange_circle:hover {
-    background: #ff8b38;
-}
-
-.orange_circle:hover i{
-    color: #fff;
 }
 
 .features {
@@ -421,8 +392,6 @@ body {
     margin-bottom: 5px;
 }
 
-/* =============== STANDART PICTURE SECTION =============== */
-
 .stpicture_fluid {
     background: #f5f5f5;
 }
@@ -432,16 +401,12 @@ body {
     padding-bottom: 107px;
 }
 
-/* =============== THIS IS AWESOME =============== */
-
 
 .awesome_section {
     text-align: center;
     padding-top: 110px;
     padding-bottom: 100px;   
 }
-
-
 
 
 .orange_circle-large {
@@ -467,8 +432,6 @@ body {
 .section_title {
     margin-bottom: 20px;        
 }
-
-/* =============== PRICING OPTIONS =============== */
 
 
 .pricing_section {
@@ -511,6 +474,9 @@ body {
     opacity: 1;
 }
 
+.price_condition__price_desc:hover .accent_pricep{
+    opacity: 1;
+}
 
 .prices_container {
     display: flex;
@@ -519,6 +485,9 @@ body {
     padding-bottom: 40px;
 }
 
+#prof_price{
+    height: 260px;
+}
 
 .dolsign {
     font-size: 35px;
@@ -527,11 +496,15 @@ body {
     color: #fff;
 }
 
-.pricenum {
+.pricenum, #prof {
     font-size: 94px;
     font-weight: bold;
     color: #fff;
     font-family: 'Raleway', sans-serif;
+}
+
+#prof{
+    font-size: 120px;
 }
 
 .pricedesc {
@@ -540,7 +513,7 @@ body {
     color: #adadad;
 }
 
-.accent_price {
+.accent_price, .accent_pricep{
     height: 40px;
     color: #fff;
     font-weight: bold;
@@ -551,6 +524,10 @@ body {
     margin-top: 20px;
     transition: 0.1s;
     opacity: 0;
+}
+
+.accent_pricep{
+    margin-top: 25px;
 }
 
 .opp_list__item {
@@ -564,8 +541,6 @@ body {
     border-bottom: 1px solid #f5f5f5;
 }
 
-
-/* =============== CUSTOMERS SAYING =============== */
 
 .customers_feed {
     text-align: center;
